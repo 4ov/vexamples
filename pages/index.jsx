@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function Home() {
     return (
         <div className="index">
-            
             <section className="section index--section">
                 <div className="flex x-center">
                     <img height="200" src="/v-logo.png" alt="" />
@@ -19,6 +18,11 @@ export default function Home() {
                     <Link href="/examples">
                         <button className="button size-m">Let{"'"}s go</button>
                     </Link>
+                </div>
+                <div className="flex x-center y-center index--social-links">
+                    <a href="https://github.com/4ov/vexamples">
+                        <img src="/github.svg" alt="" />
+                    </a>
                 </div>
             </section>
         </div>

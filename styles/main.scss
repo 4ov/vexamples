@@ -122,6 +122,11 @@
 
         }
     }
+
+    &--social-links{
+        margin-top: 1rem;
+    }
+
 }
 
 .section {
@@ -172,6 +177,8 @@
 }
 
 
+
+//utils
 *{
     &.big{
         font-size: 3rem;

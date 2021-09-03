@@ -11,6 +11,20 @@ function MyApp({ Component, pageProps }) {
         <div className="layout">
             <Head>
                 <title>V by example</title>
+                <meta
+                    name="description"
+                    content="Learn vlang by simple and real-wrold examples"
+                />
+                <meta
+                    property="og:title"
+                    content="Learn vlang by simple and real-wrold examples"
+                />
+                <meta
+                    property="og:description"
+                    content="Learn vlang by simple and real-wrold examples"
+                />
+                <meta property="og:url" content="https://snipcart.com/" />
+                <meta property="og:type" content="website"></meta>
             </Head>
             <Header />
             <Component {...pageProps} />

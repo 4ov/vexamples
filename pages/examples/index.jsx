@@ -7,7 +7,7 @@ export default function ExamplesIndex(props){
     return <div className="section flex v-down x-center">
         {
             titles.map((title, idx)=>{
-                return <a href={`examples/${props.slugs[idx]}`}>{ title }</a>
+                return <a key={idx} href={`examples/${props.slugs[idx]}`}>{ title }</a>
             })
         }
     </div>

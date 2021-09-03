@@ -92,6 +92,6 @@ export async function getStaticProps(ctx) {
 export function getStaticPaths() {
     return {
         paths: getPaths().map((p) => ({ params: { slug: p } })),
-        fallback: true,
+        fallback: false,
     };
 }

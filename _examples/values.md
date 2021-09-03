@@ -1,24 +1,27 @@
+---
+title : Values
+---
 
-
-example taken from [here](https://github.com/itsbalamurali/vbyexample/tree/master/examples/values)
 
 ```v
-// V has various value types including strings,
-// integers, floats, booleans, etc. Here are a few
-// basic examples.
-
+//next line is optional, without it you are on the main module implicitly
 module main
 
 
 
 fn main() {
-
+	s1 := "v"
+	s2 := "lang"
 	// Strings, which can be added together with `+`.
-	println("go" + "lang")
+	println("v" + "lang")
+	// This is valid too.
+	println("$s1$s2")
+	//or.
+	println("${s1}${s2}")
 
-	// Integers and floats.
-	println("1+1 =", 1+1)
-	println("7.0/3.0 =", 7.0/3.0)
+
+	//with another types.
+	println("1+1 = ${1 + 1}")
 
 	// Booleans, with boolean operators as you'd expect.
 	println(true && false)
